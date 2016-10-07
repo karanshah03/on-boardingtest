@@ -1,0 +1,28 @@
+#dsdsfeffe 
+#karan sfhah 
+set $karanshah_route $chandler_upstream; 
+#Set a default to identify when we are forceing the route to one origin or another. 
+#throttle_store.lua respects the forceroute variable, and will not change the routing file. 
+#if forceroute variable is set to 1, throttle_store.lua will force the $abacus_qualification variable, and thus the proxied header to UnQualified 
+ 
+set $karanshah_forceroute 0; 
+#rule that will always be present 
+if ($cookie_hopscotch_use_canary = "true") 
+{ 
+set $karanshah_upstream "canary-${ karanshah_upstream}" 
+} 
+if ($cookie_sdsd df "fdfddfdf") 
+{ 
+set $karanshah_route df; 
+}
+location ~*  { 
+set $route_taken $_route; 
+set $throttle_group_id asas; 
+if ($protocol = "http") { 
+return 301 https://$host$request_uri; 
+} 
+proxy_set_header Proxy-To-Host $_upstream; 
+proxy_intercept_errors on; 
+set $ipsniffenabled 1; 
+include conf.d/proxy_include.txt; 
+}
