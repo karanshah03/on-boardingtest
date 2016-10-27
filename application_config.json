@@ -9729,13 +9729,13 @@
 		},
 		"fifth-test-app": {
 			"test": {
-				"priority": "1",
-				"health_check": "1",
+				"priority": 4,
+				"health_check": "/isWorking",
 				"enabled_on": "*",
 				"us-east-1": {
 					"upstreams": [
 						{
-							"server": "w",
+							"server": "",
 							"weight": "",
 							"role": ""
 						}
@@ -9744,7 +9744,7 @@
 				"us-west-2": {
 					"upstreams": [
 						{
-							"server": "w",
+							"server": "",
 							"weight": "",
 							"role": ""
 						}
@@ -9752,13 +9752,13 @@
 				}
 			},
 			"prod": {
-				"priority": "1",
-				"health_check": "1",
+				"priority": 4,
+				"health_check": "/isWorking",
 				"enabled_on": "*",
 				"us-east-1": {
 					"upstreams": [
 						{
-							"server": "w",
+							"server": "",
 							"weight": "",
 							"role": ""
 						}
@@ -9767,7 +9767,7 @@
 				"us-west-2": {
 					"upstreams": [
 						{
-							"server": "w",
+							"server": "",
 							"weight": "",
 							"role": ""
 						}
@@ -9776,7 +9776,7 @@
 				"eu-west-1": {
 					"upstreams": [
 						{
-							"server": "w",
+							"server": "",
 							"weight": "",
 							"role": ""
 						}
@@ -9785,7 +9785,7 @@
 				"ap-southeast-1": {
 					"upstreams": [
 						{
-							"server": "w",
+							"server": "",
 							"weight": "",
 							"role": ""
 						}
@@ -9794,7 +9794,7 @@
 				"ap-southeast-2": {
 					"upstreams": [
 						{
-							"server": "w",
+							"server": "",
 							"weight": "",
 							"role": ""
 						}
@@ -9803,7 +9803,7 @@
 				"ap-northeast-1": {
 					"upstreams": [
 						{
-							"server": "w",
+							"server": "",
 							"weight": "",
 							"role": ""
 						}
